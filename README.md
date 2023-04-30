@@ -31,13 +31,6 @@ allprojects {
 	}
    }
 ```
-* In your app module gradle file just need to add the dependency
-```gradle 
-dependencies 
-   {
-     implementation 'com.github.AnviamSolutions:QR-Barcode-Scanner:1.0.1'
-   }
-```
 * Add camera permission to AndroidManifest.xml
 ```xml
 <uses-permission android:name="android.permission.CAMERA" />
