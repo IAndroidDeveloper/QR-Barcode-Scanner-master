@@ -1,8 +1,6 @@
 # QR-Barcode-Scanner
 QR &amp; Barcode Scanner library based on zxing &amp; full stable QR scanner code in android
 
-<img src="/screenshot/0.png" width="612px" height="250px">
-
 # Supported formats
 ----------------------------------------------
 | 1D product | 1D industrial | 2D            |
@@ -97,11 +95,3 @@ dependencies
  mScannerView.setFlashLight(false);
  ```
 # Found a bug?
-Submit a [github issue](https://github.com/AnviamSolutions/QR-Barcode-Scanner/issues/new)
-
-# Screenshots
-
- <p float="left">
-    <img src="/screenshot/1.png" width="320px" height="480px">
-    <img src="/screenshot/2.png" width="320px" height="480px">
-</p>
