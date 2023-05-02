@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A9000000"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@+id/content_frame"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        app:layout_anchorGravity="bottom|center">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:background="#A9000000">
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:id="@+id/ToggleButtonCamera"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textAllCaps="true"
+                android:textOff=""
+                android:text=""
+                android:textOn=""
+                android:background="@drawable/camera_selector"
+                android:textSize="12dp"></androidx.appcompat.widget.AppCompatToggleButton>
+        </LinearLayout>
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/TxtComment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif"
+            android:text="@string/power_by"
+            android:gravity="center"
+            android:textSize="11dp"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            ></androidx.appcompat.widget.AppCompatTextView>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="7dp"
+            android:background="#A9000000">
+            <androidx.appcompat.widget.AppCompatToggleButton
+                android:id="@+id/ToggleButtonFlash"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textAllCaps="true"
+                android:textOff=""
+                android:text=""
+                android:textOn=""
+                android:background="@drawable/flash_selector"
+                android:textSize="12dp"></androidx.appcompat.widget.AppCompatToggleButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/qrcode_scan_items"></include>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
